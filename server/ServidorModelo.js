@@ -1,6 +1,6 @@
 //const express = require('express')
 import express from 'express'
-import cors from 'cors';
+//import cors from 'cors';
 import {rutas} from '../routes/rutas.js'
 import {establecerConexion} from '../database/conexion.js'
 
@@ -28,8 +28,8 @@ export class Servidor{
     }
 
     auxiliares(){
-        
-        this.app.use(cors);
+
+        //this.app.use(cors);
         this.app.use(express.json())
     }
 
