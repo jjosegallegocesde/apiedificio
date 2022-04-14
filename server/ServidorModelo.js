@@ -29,7 +29,7 @@ export class Servidor{
 
     auxiliares(){
 
-        this.app.use(cors);
+        this.app.use(cors());
         this.app.use(express.json())
     }
 
